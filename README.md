@@ -1,16 +1,15 @@
 
 # Academic Template for [Hugo](https://github.com/gohugoio/hugo)
 
-This is a stripped down version of the [Hugo Academic template](https://github.com/wowchemy/starter-academic). For full features of this template, [see the **documentation**](https://wowchemy.com/docs/).
+I created this template as a quick and easy way for job market candidates to set up their website. It is a stripped down version of the [Hugo Academic template](https://github.com/wowchemy/starter-academic). For full features of this template, [see its documentation](https://wowchemy.com/docs/).
 
-I created this template as a quick way for job market candidates to set up their website. The colours come from McGill's [visual identity guide](https://www.mcgill.ca/visual-identity/visual-identity-guide).
+The colours come from McGill's [visual identity guide](https://www.mcgill.ca/visual-identity/visual-identity-guide).
 
 
-## Start Up Instructions
+## Getting Started
 
 ### Initial setup
-- On GitHub:
-  - Fork this repo. For the steps below, use your own GitHub username and repo name instead of `EvanJo` and `McHugo`.
+- On GitHub, fork this repo
 - On [Netlify](http://netlify.com)
   - Sign up with your GitHub account
   - Create a new site, using the repo you just forked. Your website is now live!
@@ -19,12 +18,15 @@ I created this template as a quick way for job market candidates to set up their
 ### Editing your site
 - Clone your repo to work on it locally
 ```bash
-git clone git@github.com:EvanJo/McHugo.git
+git clone git@github.com:$YourGitHubUsername/McHugo.git
 cd ./McHugo
 ```
   - Change the website info in `./config/_default/config.yaml`
+  - Update relevant info (SEO, initials) in `./config/params.yaml`
   - Change the contents in `./content/`
   - Add linked files to `./static/files/`
+  - Add your profile picture to `./content/authors/default/avatar.jpg` and also copy to `./assets/media/sharing/`
+
 - Pushing updates to GitHub will automatically trigger Netlify to rebuild your website
 ```bash
 git add .

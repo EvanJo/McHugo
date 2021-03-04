@@ -18,9 +18,9 @@ font_size: L
 
 site_type: Person
 local_business_type: ''
-org_name: ''
-description: ''
-twitter: ''
+org_name: 'John Doe'
+description: 'I am a Finance Ph.D. Candidate at McGill University. My research interests include Asset Pricing, Asset Pricing, and More Asset Pricing'
+twitter: '@john-doe-mcgill' #This adds a twitter mention when someone shares you website on twitter
 
 # # Contact (edit or remove options as required)
 #
