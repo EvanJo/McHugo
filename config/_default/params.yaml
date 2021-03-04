@@ -11,16 +11,31 @@ links_authors: false
 # Appearance
 theme: mcminimal
 day_night: false
+
+# Font style.
+#   Choose from `default`, `classic`, `rose`, or `mr_robot`.
 font: ''
 font_size: L
 
-# SEO
-
+### SEO ###
 site_type: Person
 local_business_type: ''
 org_name: 'John Doe'
+
+# Description for social sharing and search engines. If undefined, superuser role is used in place.
 description: 'I am a Finance Ph.D. Candidate at McGill University. My research interests include Asset Pricing, Asset Pricing, and More Asset Pricing'
-twitter: '@john-doe-mcgill' #This adds a twitter mention when someone shares you website on twitter
+
+# Twitter username (without @). Used when a vistor shares your site on Twitter.
+twitter: 'JohnDoeMcGill'
+
+# Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
+sharing_image: ""
+
+# Diplay a logo in navigation bar rather than title (optional).
+#   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
+logo: ""
+initials: "JD"
+
 
 # # Contact (edit or remove options as required)
 #
