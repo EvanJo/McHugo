@@ -1,0 +1,5 @@
+User-agent: google
+Disallow: /files/font/
+
+User-agent: *
+Disallow: /files/

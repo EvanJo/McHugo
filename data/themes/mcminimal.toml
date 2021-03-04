@@ -1,0 +1,28 @@
+# Theme metadata
+name = "mcminimal"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#9E0918"
+
+menu_primary="rgb(222.6,224.6,226.6)"#McGrey 20%
+menu_text = "rgb(93,103,112)"
+menu_text_active = "rgb(237,27,47)"#mcgill red
+menu_title ="#9E0918"#Crimson"rgb(46.5,51.5,56)"
+
+
+home_section_odd = "rgb(255, 255, 255)"
+home_section_even ="rgb(222.6,224.6,226.6)"#McGrey 20%
+#"rgb(190.2,194.2,198.2)"
+#"rgb(157.8,163.8,169.8)"
+#"rgb(125.4,133.4,141.4)"
+#"rgb(93, 103, 113)" #McGrey
+#"rgb(93,103,112)"#Grey
+#"rgb(238.8,239.8,240.7)"
+
+
+#"#9E0918"#Crimson
+#"rgb(2,79,109)"#Navy/teal
+#"rgb(237,27,47)"#mcgill red
