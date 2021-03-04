@@ -25,7 +25,8 @@ cd ./McHugo
   - Update relevant info (SEO, initials) in `./config/params.yaml`
   - Change the contents in `./content/`
   - Add linked files to `./static/files/`
-  - Add your profile picture to `./content/authors/default/avatar.jpg` and also copy to `./assets/media/sharing/`
+  - Add your profile picture to `./content/authors/default/avatar.jpg`
+  - Copy this image to `./assets/media/sharing.jpg` for it to show up in search engines
 
 - Pushing updates to GitHub will automatically trigger Netlify to rebuild your website
 ```bash

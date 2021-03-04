@@ -28,13 +28,10 @@ description: 'I am a Finance Ph.D. Candidate at McGill University. My research i
 # Twitter username (without @). Used when a vistor shares your site on Twitter.
 twitter: 'JohnDoeMcGill'
 
-# Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
-sharing_image: ""
-
-# Diplay a logo in navigation bar rather than title (optional).
+# Diplay a logo or initials in navigation bar rather than title (optional).
 #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
 logo: ""
-initials: "JD"
+initials: ""
 
 
 # # Contact (edit or remove options as required)
