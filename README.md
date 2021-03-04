@@ -28,13 +28,14 @@ cd ./McHugo
 - Pushing updates to GitHub will automatically trigger Netlify to rebuild your website
 ```bash
 git add .
-git commit -am ''
+git commit -am 'Updated content XYZ'
 ```
 
 ### To preview your site locally, you will need to install Hugo Extended and Go
 
 - See instructions for installing [Go](https://golang.org/doc/install) and [Hugo](https://gohugo.io/getting-started/installing/). On MacOS with homebrew:
 ```bash
+brew update
 brew install go hugo
 ```
 - To preview your site locally, run
