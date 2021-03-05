@@ -45,3 +45,5 @@ brew install go hugo
 ```bash
 hugo server
 ```
+
+- To get more advanced features (e.g.: view draft website on netlify, debug serverless Lambda functions), check out the [Netlify CLI](https://docs.netlify.com/cli/get-started/)
