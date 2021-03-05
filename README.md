@@ -5,6 +5,7 @@ I created this template as a quick and easy way for job market candidates to set
 
 The colours come from McGill's [visual identity guide](https://www.mcgill.ca/visual-identity/visual-identity-guide).
 
+[Here's the demo](https://john-doe-mcgill.netlify.app/).
 
 ## Getting Started
 
