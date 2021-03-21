@@ -4,9 +4,12 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
+  - name: Experience
+    url: '#experience'
+    weight: 5
   - name: Research
     url: '#research'
     weight: 10
   - name: CV
-    url: 'files/CV.pdf'
+    url: 'files/John_Doe_CV.pdf'
     weight: 20

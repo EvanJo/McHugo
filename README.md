@@ -48,3 +48,31 @@ hugo server
 ```
 
 - To get more advanced features (e.g.: view draft website on netlify, debug serverless Lambda functions), check out the [Netlify CLI](https://docs.netlify.com/cli/get-started/)
+
+## Optional Builder
+As an option, you build parts of your site and CV from a googlesheets. These files are in the `./build/` folder. The R scripts read information from a googlesheets and builds a PDF CV and the publications pages and the experience module on Hugo.
+
+The CV building code is adapted from [Nick Strayer](https://github.com/nstrayer/cv). Some features have been taken out in this version for simplicity and compatibility.
+
+### Initialization
+
+- Copy this [googlesheet](https://docs.google.com/spreadsheets/d/11pLgd0LQSYeRmBUZkM2lLCJ3qii_kj7dr2Lf-71pLSM).
+- Modify the `main_sheet`, `contact_info` and `text_blocks`. The rest of the sheets should not be modified.
+
+### To update
+To update the CV and site entries
+
+- Open `./build/run.r`
+- Modify the `data_location` to your googlesheets.
+- Run the script.
+
+The CV PDF will automatically be placed into the `./static/files/` folder, and the `./content/publications/` folder and `experience.md` file will be updated.
+
+| Note: this will overwrite existing files |
+|:--|
+
+The site is ready to be built.
+
+### Customization
+
+- To change the cv appearance, modify `cv.css`.

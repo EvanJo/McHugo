@@ -10,3 +10,10 @@ functions/
 
 # Local Netlify folder
 .netlify
+.Rproj.user
+academic.Rproj
+
+# Development
+dev/
+_vendor/
+.DS_Store
