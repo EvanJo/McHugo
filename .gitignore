@@ -17,3 +17,5 @@ academic.Rproj
 dev/
 _vendor/
 .DS_Store
+.Rdata
+.Rhistory
