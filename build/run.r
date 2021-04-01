@@ -25,7 +25,7 @@ gs4_deauth()
 gs4_auth()
 
 # Change to where your googlesheets is
-data_location = "https://docs.google.com/spreadsheets/d/1AomByoMj_LhPizchiXdSVZY5k7XSnnu_Wd60jbmNGoE/edit?usp=sharing"
+data_location = "https://docs.google.com/spreadsheets/d/1AomByoMj_LhPizchiXdSVZY5k7XSnnu_Wd60jbmNGoE/"
 
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")
@@ -40,6 +40,7 @@ chrome_print(input = tmp_html_cv_loc,
 # Output Hugo Publication and Experience pages. Note this will overwrite any
 # files that are there.
 source("build/build_hugo.R")
+
 
 # Commit updated files to start new netlify build
 system("git add .")
