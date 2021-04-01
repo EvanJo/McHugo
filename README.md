@@ -1,7 +1,7 @@
 
 # Academic Template for [Hugo](https://github.com/gohugoio/hugo)
 
-I created this template as a quick and easy way for job market candidates to set up their website. It is a stripped down version of the [Hugo Academic template](https://github.com/wowchemy/starter-academic). For full features of this template, [see its documentation](https://wowchemy.com/docs/).
+This template serves as a quick and easy way for job market candidates to set up their website. It is a stripped down version of the [Hugo Academic template](https://github.com/wowchemy/starter-academic). For full features of this template, [see its documentation](https://wowchemy.com/docs/).
 
 The colours come from McGill's [visual identity guide](https://www.mcgill.ca/visual-identity/visual-identity-guide).
 
@@ -49,8 +49,10 @@ hugo server
 
 - To get more advanced features (e.g.: view draft website on netlify, debug serverless Lambda functions), check out the [Netlify CLI](https://docs.netlify.com/cli/get-started/)
 
-## Optional Builder
-As an option, you can build contents of your site and CV from a googlesheets. These files are in the `./build/` folder. The R scripts read information from a googlesheets and builds a PDF CV and the publications pages and the experience module on Hugo.
+## Google Sheets Site and CV Builder
+Thanks to [Derek Chan](https://github.com/derek-chan), you can generate build contents of your site and CV from a Google Sheet. These files are in the `./build/` folder.
+
+The R scripts read information from a Google Sheet and builds the PDF CV, publications pages, experience module on Hugo.
 
 The CV building code is adapted from [Nick Strayer](https://github.com/nstrayer/cv). Some features have been taken out in this version for simplicity and compatibility.
 
@@ -63,7 +65,7 @@ The CV building code is adapted from [Nick Strayer](https://github.com/nstrayer/
 To update the CV and site entries
 
 - Open `./build/run.r`
-- Modify the `data_location` to your googlesheets.
+- Modify the `data_location` to your own Google Sheet.
 - Run the script.
 - The CV PDF will be placed into the `./static/files/` folder by default. The `./content/publications/` folder and `./content/home/experience.md` file will be updated.
 
