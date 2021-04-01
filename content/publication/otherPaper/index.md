@@ -1,5 +1,5 @@
 ---
-title: "Another amazing article"
+title: "Another Amazing Article"
 date: 2018-01-01
 date_print: "2018"
 
