@@ -9,6 +9,18 @@
 
 # You may need to run this if your googlesheets is private. A browser prompt
 # should arise. You should only need to do this once every so often.
+
+require("googlesheets4")
+require("rmarkdown")
+require("pagedown")
+require("tidyr")
+
+### If running script outside of RStudio, run one of the following lines
+### so that pandoc is added to the environment.
+# Sys.setenv(RSTUDIO_PANDOC="/usr/lib/rstudio/bin/pandoc") #Linux
+# Sys.setenv(RSTUDIO_PANDOC="/Applications/RStudio.app/Contents/MacOS/pandoc") #MacOS
+# Sys.setenv(RSTUDIO_PANDOC="/c/Program Files/RStudio/bin/pandoc/") #Windows
+
 gs4_deauth()
 gs4_auth()
 
@@ -17,12 +29,12 @@ data_location = "https://docs.google.com/spreadsheets/d/11pLgd0LQSYeRmBUZkM2lLCJ
 
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")
-rmarkdown::render("build/cv.rmd",
+render("build/cv.rmd",
                   params = list(pdf_mode = TRUE,data_location = data_location),
                   output_file = tmp_html_cv_loc)
 
 # Convert to PDF using Pagedown. Change output location below if necessary.
-pagedown::chrome_print(input = tmp_html_cv_loc,
+chrome_print(input = tmp_html_cv_loc,
                        output = "static/files/John_Doe_CV.pdf")
 
 # Output Hugo Publication and Experience pages. Note this will overwrite any
